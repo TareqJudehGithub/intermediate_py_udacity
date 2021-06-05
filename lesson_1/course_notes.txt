@@ -1,0 +1,199 @@
+Intermediate Python
+ - Python is a high level language.
+
+ Why Learn Python?
+     Python is practical.
+     Python has a wide-ranging collection of applications like data analysis, machine
+     learning, web development and application, automation, and networking and internet
+     connectivity. Almost anywhere you look in the digital world, there's a realized or
+     potential application of Python.
+
+     In the field of data analysis, Python (and helpful third-party libraries) offer 
+     powerful tools to manipulate data sets.
+     In the field of machine learning, high-level Python frameworks bring artificial 
+     intelligence within reach of all programmers.
+     In the world of networking and internet connectivity, Python provides utilities 
+     to meaningfully interoperate with other systems.
+     In the world of automation (even just automating the boring stuff), Python is a 
+     reliable tool to perform common operations.
+
+     Python is Employable
+     Many companies use Python internally. While some use it as a helpful tool to 
+     smooth over rough edges, others (such as Instagram and Dropbox) have made Python 
+     a core part of their product and technology. Almost no matter the company, knowledge of 
+     Python (and the skill to think computationally) is highly employable.
+
+     Python is Powerful
+     In my personal experience, Python provides a particularly potent way of perceiving 
+     the world of programming.
+
+     Python enables you to operate at a high-level of problem-solving, spending your 
+     time chasing solutions rather than bugs (well, hopefully!). 
+     I am a much better thinker, and problem solver, because I know Python. With time 
+     and effort, you too can broaden your programming horizons and level up your skills.
+
+History of Python
+     Python was created by Guido van Rossum, ex-benevolent-dictator-for-life. 
+     Named after the British sketch comedy series Monty Python (which can be 
+     quite funny), the programming language was originally released around 1994:
+
+     Python 1: 1994 - 2000
+     Python 2: 2000 - 2020
+     Python 3: 2008 - ???
+
+>>> import this
+The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+
+
+Python is applicable
+At its heart, the Zen of Python is about one big idea:
+    Programmers are more important than programs.
+    Python might not be as fast nor as machine-friendly as some other programming
+    languages, but it's simpler, more readable, and better for humans.
+
+
+
+Python Developer Road Map (Learning Path)
+
+Python2 is no longer maintained (No more official support).
+
+Python3 to learn.
+
+PyCharm
+     PyCharm is an IDE, which include all features and tools needed by developers,
+     comparing to a code editor like VS Code.
+
+
+Python Foundation
+     Data Types, conditionals, loops.. etc ..
+
+     Pythonic: features that are only exclusive to Python.. features like Comprehensions.
+
+     PiPy.org is a famous Python packages manager, where we search and find lots 
+     of Python packages.
+
+     Python Interpreter
+          CPython
+     
+     Python Standard Library: built-in python libraries.
+
+     Python Testing
+          unittest
+     
+     Magic Methods/ Dunders
+          Unique features for Python
+     
+     Iterators/Generators/Decorators
+
+     OOP vs FP (Functional Programming)
+
+     PEPs: Python Enhancement Proposals
+
+     Virtual Environments
+          Virtualization (Each project can have a different environment).
+          Virtualenv 
+          venv(Python3.3)
+          pipenv  define what requirements and versions the project needs.
+          Poetry  creates packages
+          Conda used in machine learning and data science.
+          Docker  containers systems
+
+
+     Popular libraries:
+          Six       A package that allows us to work with both Python2 and Python3.
+          TKinter   Allows us to write GUIs
+          PyQt      same as TKinter but with modern GUIs
+          Requests  to get data from APIs
+          Pillow    Image processor
+          asyncio   Allows us to write async/await in Python code
+          Pygame    Build games using Python
+
+     
+     Computer Science topics must know:
+          Algorithms          Set of instructions to solve a problem
+          Data Structure      To organize data
+          Time Complexity     Time needed to finish running codes.
+          Space Complexity    Storage needed to run a code.
+     
+     CI/CD     continuous integration/continuous delivery. Continuity of service 
+               during updates.
+               Travis CI, Jenkins, and Gitlab.
+
+
+     Career options
+
+          Wev Development
+               Python is the Backend in web dev
+               Django    High-level framework..contains all tools and features to 
+                         build web apps.
+               Flask     Micro framework. Simple to learn. Good to start with.
+               ASGI vs WSGI
+
+          Web Parsing/Scraping/Crawling
+               Beautiful Soup
+               Scrapy
+
+          Test Automation
+               PyTest
+               Selenium       Browser Automation
+               Robot Framework  Automation testing
+               unittest
+
+          Scripting
+               System Admin   Makes sure that computers run by the company are always up.
+               DevOps        The code programmers write, are deployed to the user
+                              without any errors, using tools like kubernetes.
+               Anything...
+
+          Data Science/Analysis
+
+               Learning from data, making business decisions
+                    famous libraries:
+                         NumPy 
+                         Pandas
+                         SciPy
+                         Seaborn        visualization library
+                         Matplotlib     visualization library
+                         Bokeh          visualization library
+
+
+          Data Engineering (Big Data)
+               Hadoop/MapReduce
+               Apache
+               kafka
+          
+          Machine Learning (ML)
+               PyTorch             Famous in ML
+               Keras
+               TensorFlow
+               Scikit-Learn        Easy to use
+
+
+
+     
+
+
+
+
+
+

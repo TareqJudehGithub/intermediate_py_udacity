@@ -1,0 +1,4 @@
+Sets
+A set is an unordered collection of distinct hashable elements.
+
+s = {1, 2, 3}

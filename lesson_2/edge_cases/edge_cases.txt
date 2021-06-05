@@ -1,0 +1,16 @@
+
+A string is an immutable sequence of Unicode code points.
+ Unicode is a standard that provides an association between semantic character
+ names (such as "Latin Capital Letter A" or "Slice of Pizza") and code points –
+ unique numbers for each character.
+
+
+ erm	Definition
+bytes and bytearray	Alternative sequence types for representing sequences of bytes,
+rather than sequences of characters (str).
+collections.Counter	A dict subclass for counting hashable objects.
+collections.defaultdict	A dict subclass that calls a factory function to supply missing values.
+collections.namedtuple	A factory function for creating tuple subclasses with named fields.
+The collections module	An incredibly useful built-in Python module providing specialized container types.
+
+

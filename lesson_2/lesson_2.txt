@@ -1,0 +1,247 @@
+Representing Data
+
+Data Types:
+ 1. Simple Types:
+     - bool, int, float, text, objects, and names.
+ 2. *Sequence Type:
+     - str, list, tuple.
+ 3. Mapping Type:
+     - dictionary, set, and comprehensions.
+
+ Sequential means ordered.
+
+
+    Term	    Definition
+    Boolean	    A data value representing a single bit of information, whether 
+                on/off or true/false.
+    Collection	A sized, iterable, container of elements of data.
+    Number	    A data value representing a mathematical number.
+    Text	    A data value representing text as a sequence of characters.
+
+Collection: An aggregation of data can be sized, iterable, and/or container.
+Sequences: An ordered collections of heterogenous elements.
+Sets: An unordered collections of distinct elements.
+Mapping: Associations from some elements to other elements.
+Mutable: Collections can be changed.  i.e Lists, Sets, Dictionaries.
+Immutable: Collections cannot be changed (hashable).
+
+
+Mutable vs Immutable
+
+name = "Tareq"
+name[0] = "B"
+print(name)
+# Returns Errors
+
+new_list = ["orange"]
+new_list[0] = "apple"
+# outcome: [apple]
+
+Term	        Definition
+Container	    An object that holds elements of data.
+Iterable	    An object that can produce a stream of elements of data.
+Mapping	        An unordered collection associating elements of data (keys) to other elements of data (values).
+Mutable	        A property of a data collection where the top-level collection can be changed.
+Schema	        A representation or outline of a data model.
+Sequence	    An ordered collection of data elements.
+Set	            An unordered collection of unique data elements.
+Sized	        An object that has a finite size.
+Structured Data	Information to which we assign meaning through organization.
+
+
+Python Simple Data Types
+    bool, int, float, strings, and None.
+
+
+Multiline string (""" """)literals are often used as documentation strings for 
+modules, classes, and functions that you'll write.
+
+Escaping Characters
+Special characters in string literals can be escaped with the / character. 
+When escaping single- or double-quotes in text, it's often more convenient to 
+choose the string delimiter that makes your text easy to work with.
+
+print('doesn\'t')  # => doesn't
+print("doesn't")   # => doesn't
+
+print('"Yes," he said.')    # => "Yes," he said.
+print("\"Yes,\" he said.")  # => "Yes," he said.
+
+print('"Isn\'t," she said.')  # => "Isn't," she said.
+To avoid escaping, you can prefix the string literal with an r, like r"U\nescaped", 
+whose second character is '\'.
+
+greeting = "Hello world! "
+
+greeting.find('lo')   # 3 (-1 if not found)
+greeting.replace('llo', 'y')  # => "Hey world!"
+greeting.startswith('Hell')  # => True
+greeting.isalpha()           # => False (due to '!')
+
+greeting.lower()  # => "hello world! "
+greeting.title()  # => "Hello World! "
+greeting.upper()  # => "HELLO WORLD! "
+
+greeting.strip()  # => "Hello world!"
+greeting.strip('dH !')  # => "ello worl"
+
+str.removeprefix or str.removesuffix introduced in Python 3.9
+
+
+greet = "hello world!"
+print(greet.strip("he"))
+print(greet.strip("d!"))
+print("")
+
+# Remove characters from the start of the string:
+print(greet.removeprefix("he"))
+
+# Remove characters from the end of the string
+print(greet.removesuffix("d!"))
+
+Converting Values
+The named types str, int, float, and bool can be used to convert values from one 
+type to another.
+
+str(42)       # => "42"
+
+int("42")     # => 42
+float("2.5")  # => 2.5
+float("1")    # => 1.0
+
+int("42.5")   # Raises an error (ValueError).
+
+Truthiness
+The conversion of a value to a boolean gives the value an essence of 
+"truthiness" – as a boolean, is this object True or False? Empty objects are 
+"Falsy":
+
+# 'Falsy' values.
+bool(None)   # => False
+bool(False)  # => False
+bool(0)      # => False
+bool(0.0)    # => False
+bool('')     # => False
+
+# Empty data structures too!
+bool([])     # => False
+
+Term	    Definition
+bool	    A binary type with type values: False and True.
+float	    A numeric type representing real numbers.
+int	        A numeric type representing whole numbers.
+None	    A singleton value representing nothingness.
+str	        A type representing a text value.
+Truthiness	The property that every Python object is implicitly convertible to 
+a boolean value.
+
+everything in Python is an object.
+Object has types and identities.
+
+isinstance() takes two arguments (value, type). and returns wether True/False
+comparing both arguments.
+
+is and ==  are both the same comparison operators, with a slight difference.
+
+== compare values
+x = "hello"
+y = "world"
+
+operand (operator) operand
+x == y
+
+returns True  (both are str type)
+
+is compares identities.
+x is y
+returns False  .. x has a different identity that y has, because x and y point
+to different objects.
+
+
+x = "hello, world"
+y = x
+Assigning from a variable adds another reference to the same object ("hello, world").
+
+
+().__sizeof__()  shows size of a python object.
+(41).__sizeof__()
+>> outcome 28 bytes
+
+Term	        Definition
+Object	        A fundamental type that represents all objects in Python.
+Object Identity	A unique numeric value that identifies a specific object.
+Object Type	    A category of a specific object.
+
+
+VARIABLES
+    Variable is a named reference to an object.
+    Variables in Python are dynamically-type (declared without a data type.)
+
+Namespaces
+
+    We can check namespances using local()
+    local()["x"]
+    >> return "Hello, World!"
+
+To recap:
+    - everything is Python is an object.
+    - an object has type and identity.
+    - Use == to compare values and is to compare identities.
+    - A variable is name assigned to an object.
+        - Variable assignment adds a new local reference to an object.
+    - Objects have types, but variables do not have types (untyped).
+
+Assignment	    The process by which Python assigns a value to a name.
+Duck Typing	    A philosophy promoting interface-based design, widely adopted in 
+the design of Python.
+
+Dynamic Typing	Python's approach to type systems, in which objects have types, 
+but variables (names) are untyped.
+
+Name	        A text variable name that refers to an object.
+Name Resolution	The process by which Python resolves a name to an object value 
+to which it refers.
+Namespace	    An associative mapping between names and objects, used to resolve 
+names to the object values to which they refer.
+
+Shared Interface
+
+    Sized
+        Any object that is Sized can be used with the len function, which returns
+        the number of items in a container.
+    Iterable
+        An Iterable knows how to produce its elements one at a time in a stream.
+
+SEQUENCES
+
+scrutinizing strings
+    strings is an immutable sequence of characters.
+    Indexing and negative indexing:
+
+Any object that is a Sequence is a Collection, and therefore also Sized,
+Iterable, and a Container, and can be used in all of the situations described above.
+
+Sequence	An ordered collection of data.
+Slicing	    Special syntax for accessing or updating elements or subsequences of data from a sequence type.
+
+str	        An immutable sequence of characters.
+
+
+Lists 
+    - A list is a finite, ordered, mutable sequence of elements. Lists are one of the most fundamental, and most useful, collections that Python provides.
+    - Lists are mutable. To append an element to the end of a list, use the .append method, which updates the list in-place.
+    - Lists can contain any object – even other collections!
+
+Lists methods:
+    .append(elem)
+    .extend(elem, elem2, elem3)
+    .insert(index, elem)
+    .remove(elem)
+    .pop(index)
+    .clear()
+
+
+Tuples
+    Tuples are sequenced immutable data type.
+    Tuples are often used to pack and unpack  multiple values of data.
+

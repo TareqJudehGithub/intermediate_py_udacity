@@ -1,0 +1,36 @@
+Dictionary:
+     Mutable map from hashable keys to arbitrary values.
+     Mappings
+          A mapping is a mutable map from hashable values to arbitrary objects.
+
+     Get with Default
+    In some cases, you'll want to either get the value associated with a key, or a
+    default value if it's missing in a dictionary, rather than raising a KeyError.
+    In these cases,
+    you can use dict.get() method
+
+    d = {"one": 1, "two": 2, "three": 3}
+
+    # Access
+    d['one']  # => 1
+    d['five']  # Raises an error (KeyError)!
+
+    # Modify
+    d['two'] = 22  # Modify an existing key
+    d['four'] = 4  # Add a new key
+
+    temps = {'CA': [101, 115, 108], 'NY': [98, 102]}
+    temps['California']  # Raises an error (KeyError)!
+
+    temps.get('CA')   # => [101, 115, 108]
+    temps.get('KY')   # => None (not a KeyError!)
+
+    ky_temps = temps.get('KY', [])
+    num_observations = len(ky_temps)
+
+    You can also explicitly use the .clear() method to wipe a dictionary clean.
+
+    New Terms
+    Term	Definition
+    dict	A mutable mapping of hashable values to arbitrary objects.
+    Dictionary View	An abstract supertype of views into a dictionary's keys, values, or items.

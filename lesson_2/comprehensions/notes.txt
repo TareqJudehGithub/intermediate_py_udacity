@@ -1,0 +1,32 @@
+List Comprehensions
+A list comprehension is a concise way to create and populate a list in Python in a declarative, rather
+than imperative, fashion.
+
+The general structure of a list comprehension is:
+
+[f(xs) for xs in iter]
+
+
+List comprehensions are remarkably useful for capturing a wide variety of data transformations.
+
+# Lowercased versions of words in a sentence.
+[word.lower() for word in sentence]
+
+# Words in a sentence of more than 8 letters long.
+[word for word in sentence if len(word) > 8]
+
+# 3-tuples of the first ten numbers and their squares and cubes.
+[(x, x ** 2, x ** 3) for x in range(10)]
+
+# Indices for a triangular matrix.
+[(i,j) for i in range(5) for j in range(i)]
+
+
+
+New Terms
+Term	Definition
+Dictionary Comprehension	A concise, syntactical shortcut for creating and populating a
+                            dict.
+List Comprehension	        A concise, syntactical shortcut for creating and populating a
+                            list.
+Set Comprehension	        A concise, syntactical shortcut for creating and populating a set.
